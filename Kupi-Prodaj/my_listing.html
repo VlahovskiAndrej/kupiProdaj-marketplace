@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KupiProdaj | My Listings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="nav-1">
+        <div class="nav-item">
+           <img width="50px" src="/images/shopping-basket.png" alt="icon">
+            <h1>KupiProdaj</h1> 
+        </div>
+        <div class="nav-item" id="nav-item2">
+            <div id="logged-check"></div>
+            <button id="sign-out-btn">Sign Out</button>
+        </div>
+    </nav>
+    <nav id="nav-2">
+        <ul>
+            <a href="index.html"><li class="nav-item">Listings</li></a>
+            <a href="my_listing.html" class="selected"><li>My Listings</li></a>
+            <a id="nav-add-listing" href="add_listing.html" ><li id="nav-add-listing" >Add Listing</li></a>
+        </ul>
+    </nav>
+
+    <nav id="search-bar">
+        <form id="search-form">
+            <input id="search-input" type="text" placeholder="Search...">
+            <div>
+                <select name="location" id="location">
+                    <option value="all">All Cities</option>
+                    <option value="Skopje">Skopje</option>
+                    <option value="Veles">Veles</option>
+                    <option value="Ohrid">Ohrid</option>
+                    <option value="Kumanovo">Kumanovo</option>
+                    <option value="Tetovo">Tetovo</option>
+                    <option value="Kicevo">Kicevo</option>
+                    <option value="Berovo">Berovo</option>
+                    <option value="Bitola">Bitola</option>
+                    <option value="Bogdanci">Bogdanci</option>
+                    <option value="Valandovo">Valandovo</option>
+                    <option value="Vinica">Vinica</option>
+                    <option value="Berovo">Berovo</option>
+                    <option value="Gevgelija">Gevgelija</option>
+                    <option value="Gostivar">Gostivar</option>
+                    <option value="Debar">Debar</option>
+                    <option value="Delcevo">Delcevo</option>
+                    <option value="Demir Kapija">Demir Kapija</option>
+                    <option value="Demir Hisar">Demir Hisar</option>
+                    <option value="Kavadarci">Kavadarci</option>
+                    <option value="Kocani">Kocani</option>
+                    <option value="Kratovo">Kratovo</option>
+                    <option value="Kriva Palanka">Kriva Palanka</option>
+                    <option value="Makedonski Brod">Makedonski Brod</option>
+                    <option value="Negotino">Negotino</option>
+                    <option value="Pehcevo">Pehcevo</option>
+                    <option value="Prilep">Prilep</option>
+                    <option value="Probistip">Probistip</option>
+                    <option value="Radovish">Radovish</option>
+                    <option value="Resen">Resen</option>
+                    <option value="Sveti Nikole">Sveti Nikole</option>
+                    <option value="Struga">Struga</option>
+                    <option value="Strumica">Strumica</option>
+                    <option value="Stip">Stip</option>
+                </select>
+                <select name="category" id="category">
+                    <option value="all">All Categories</option>
+                    <option value="Books">Books</option>
+                    <option value="Clothing, Shoes & Accessories">Clothing, Shoes & Accessories</option>
+                    <option value="Collectibles">Collectibles</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Home & Garden">Home & Garden</option>
+                    <option value="Cars & Vehicles">Cars & Vehicles</option>
+                    <option value="Pet Supplies">Pet Supplies</option>
+                    <option value="Sporting Goods">Sporting Goods</option>
+                    <option value="Toys">Toys</option>
+                    <option value="Computers/Tablets & Networking">Computers/Tablets & Networking</option>
+                    <option value="Other">Other</option>
+                </select>
+                <button id="search-btn" type="submit">Search</button>
+            </div>
+        </form>
+    </nav>
+    
+    <section id="myListings">
+        <ul id="my-listing-ul">
+            <h3 id="no-my-listings-found" style='display: none;' >0 listings found...</h3>
+            <h3 id="no-listings-found" style='display: none;' ></h3>
+           <!-- <li class="new-listing">
+            <div id="image">
+                <img src="/images/sample-stamp-rubber-style-red-260nw-1811246308.webp" alt="image" width="150px" height="150px">
+            </div>
+            <div id="text">
+                <div id="title-date">
+                    <button id="full-size-btn">Title</button>
+                    <h5 id="listing-date">19.07.2002</h5>
+                </div>
+                <h4 id="listing-price">4900 Euro</h4>
+                <p id="listing-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic quis harum voluptatibus explicabo assumenda labore tempore ducimus architecto minima dicta. Consequuntur laboriosam quo inventore atque perspiciatis facere accusamus cumque minima.</p> 
+                <button id="delete-listing-btn">Delete</button>
+                <button id="edit-listing-btn">Edit</button>
+            </div>
+           </li>  -->
+        </ul>
+        <div id="fullpage" ></div>
+    </section>
+
+    <section style="display: none;" id="Listings">
+        <ul id="listing-ul">
+        </ul>
+    </section>
+
+    <nav id="footer">
+        <h5>Copyright &copy; 2022, Andrej Vlahovski</h5>
+    </nav>
+    
+    <button id="add-listing-btn" style="display: none;"></button>
+    <button id="login-btn" style="display: none;"></button>
+    <script type="module" class="button" src="/scripts/listings.js"></script>
+</body>
+</html>

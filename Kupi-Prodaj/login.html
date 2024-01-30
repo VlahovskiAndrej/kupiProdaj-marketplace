@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>KupiProdaj | Log-in</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div style="display: none;" id="logged-check"></div>
+        <div id="log-in-container">
+
+            <div id="text-div" >
+                <h1>Welcome to <span id="title-span">KupiProdaj</span> </h1>
+                <h2>The Best Listing Website in Macedonia</h2>
+            </div>
+
+            <form id="log-in-form" action="#">
+                <h2>LOG IN</h2>
+                <img src="/images/user.png" alt="" width="65px">
+                <input id="e-mail-log" name="e-mail-log" type="email" placeholder="E-mail:">
+                <h5 class="error-message" id="error-e-mail-log">Please provide a valid email</h5>
+                <input id="password-log" name="password-log" type="password" placeholder="Password:">
+                <h5 class="error-message" id="error-password-log">Please enter valid Password</h5>
+                <div id="checkDiv" style="width: 65%;">
+                    <div style="width: 65%;">
+                        <input id="pass-checkbox" style="width: 20px;" type="checkbox"> <span style="font-size: 14px;">Show Password</span> 
+                    </div>
+                    <div style="width: 65%;">
+                        <input id="remember-me" style="width: 20px;" type="checkbox"><span style="font-size: 14px;">Remember me</span> 
+                    </div>
+                </div>
+                
+                <button id="login-btn">Login</button>
+                <button id="google-btn"> <img src="/images/google.png" alt="Google-icon" width="20px" height="20px"> Sign in with Google</button>
+                <h4>or</h4>
+                <a id="guest-btn" href="index.html"> <img src="/images/user-icon.png" alt="Google-icon" width="20px" height="20px"> Continue as Guest</a>
+                <button style="display: none;" id="sign-out-btn">Sign Out</button>
+                <p>Forgot password?</p>
+                <p>Dont have an account? <a class="blue-link" href="register.html">Register!</a></p>
+            </form>
+
+            <nav id="footer">
+                <h5>Copyright &copy; 2022, Andrej Vlahovski</h5>
+            </nav>
+        </div>
+
+        <section style="display: none;" id="myListings">
+            <ul id="my-listing-ul">
+            </ul>
+        </section>
+        <section style="display: none;" id="Listings">
+            <ul id="listing-ul">
+            </ul>
+        </section>
+
+        <button id="add-listing-btn" style="display: none;"></button>
+        <script type="module" src="/scripts/login.js"></script>
+    </body>
+</html>

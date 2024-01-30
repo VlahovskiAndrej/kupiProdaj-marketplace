@@ -1,0 +1,159 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KupiProdaj | Add Listing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav id="nav-1">
+        <div class="nav-item">
+           <img width="50px" src="/images/shopping-basket.png" alt="icon">
+            <h1>KupiProdaj</h1> 
+        </div>
+        <div class="nav-item" id="nav-item2">
+            <div id="logged-check"></div>
+            <button id="sign-out-btn">Sign Out</button>
+        </div>
+    </nav>
+    <nav id="nav-2">
+        <ul>
+            <a href="index.html" ><li class="nav-item">Listings</li></a>
+            <a href="my_listing.html"><li>My Listings</li></a>
+            <a id="nav-add-listing" href="add_listing.html" class="selected"><li>Add Listing</li></a>
+        </ul>
+    </nav>
+
+    <div id="add-listing-container" >
+        <form id="add-listing-form" action="">
+            <h2>Add Listing</h2>
+
+            <div id="location-category">
+                <div class="label-input">
+                    <label for="location">Location*</label>
+                    <select name="location" id="location">
+                        <option value="none" selected disabled>- Choose Location - </option>
+                        <option value="all">All Cities</option>
+                        <option value="Skopje">Skopje</option>
+                        <option value="Veles">Veles</option>
+                        <option value="Ohrid">Ohrid</option>
+                        <option value="Kumanovo">Kumanovo</option>
+                        <option value="Tetovo">Tetovo</option>
+                        <option value="Kicevo">Kicevo</option>
+                        <option value="Berovo">Berovo</option>
+                        <option value="Bitola">Bitola</option>
+                        <option value="Bogdanci">Bogdanci</option>
+                        <option value="Valandovo">Valandovo</option>
+                        <option value="Vinica">Vinica</option>
+                        <option value="Berovo">Berovo</option>
+                        <option value="Gevgelija">Gevgelija</option>
+                        <option value="Gostivar">Gostivar</option>
+                        <option value="Debar">Debar</option>
+                        <option value="Delcevo">Delcevo</option>
+                        <option value="Demir Kapija">Demir Kapija</option>
+                        <option value="Demir Hisar">Demir Hisar</option>
+                        <option value="Kavadarci">Kavadarci</option>
+                        <option value="Kocani">Kocani</option>
+                        <option value="Kratovo">Kratovo</option>
+                        <option value="Kriva Palanka">Kriva Palanka</option>
+                        <option value="Makedonski Brod">Makedonski Brod</option>
+                        <option value="Negotino">Negotino</option>
+                        <option value="Pehcevo">Pehcevo</option>
+                        <option value="Prilep">Prilep</option>
+                        <option value="Probistip">Probistip</option>
+                        <option value="Radovish">Radovish</option>
+                        <option value="Resen">Resen</option>
+                        <option value="Sveti Nikole">Sveti Nikole</option>
+                        <option value="Struga">Struga</option>
+                        <option value="Strumica">Strumica</option>
+                        <option value="Stip">Stip</option>
+                    </select>
+                </div>
+                
+                <div class="label-input">
+                    <label for="category">Category*</label>
+                    <select name="category" id="category" required>
+                        <option value="none" selected disabled> - Choose Category - </option>
+                        <option value="Books">Books</option>
+                        <option value="Clothing, Shoes & Accessories">Clothing, Shoes & Accessories</option>
+                        <option value="Collectibles">Collectibles</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Home & Garden">Home & Garden</option>
+                        <option value="Cars & Vehicles">Cars & Vehicles</option>
+                        <option value="Pet Supplies">Pet Supplies</option>
+                        <option value="Sporting Goods">Sporting Goods</option>
+                        <option value="Toys">Toys</option>
+                        <option value="Computers/Tablets & Networking">Computers/Tablets & Networking</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="tpm-descriprion">
+                <div id="title-price-mobile">
+                    <div class="label-input">
+                        <label for="title">Title*</label>
+                        <input type="text" name="title" id="ttitle" placeholder="Enter Title..." maxlength="30">
+                    </div>
+    
+                    <div class="label-input" id="price-div">
+                        <div id="price-number">
+                            <label for="price">Price</label>
+                            <input type="number" name="price" id="price">
+                        </div>
+                        <div id="price-radios">
+                            <input id="radio1" class="radio" type="radio" name="price" value="MKD">MKD
+                            <input id="radio2" class="radio" type="radio" name="price" value="USD">USD
+                            <input id="radio3" class="radio" type="radio" name="price" value="EUR">EUR
+                        </div>
+                    </div>
+    
+                    <div class="label-input">
+                        <label for="phone">Mobile-number*</label>
+                        <input type="number" name="phone" id="phone" required>
+                    </div>
+                </div>
+
+                <div class="label-input">
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description" cols="70" rows="7" placeholder="Enter Description..."></textarea>
+                </div>
+            </div>
+
+           <div id="main-other">
+                <div class="label-input">
+                    <label for="main-photo">Main image</label>
+                    <input name="main-photo" id="add-file" type="file" accept="image/png, image/gif, image/jpeg">
+                </div>
+
+                <div class="label-input">
+                    <label for="other-photos">Other images (max 5)</label>
+                    <input name="other-photos" id="add-file-2" type="file" accept="image/png, image/gif, image/jpeg" multiple>
+                </div>
+           </div>
+           <div id="buttons-div">
+                <button id="add-listing-btn" type="submit">Add Listing</button>
+                <button id="reset-listing-btn" type="submit">Reset</button>
+           </div>
+            
+        </form>
+    </div>
+
+    <nav id="footer">
+        <h5>Copyright &copy; 2022, Andrej Vlahovski</h5>
+    </nav>
+
+    <section style="display: none;" id="Listings">
+        <ul id="listing-ul">
+        </ul>
+    </section>
+    <section style="display: none;" id="myListings">
+        <ul id="my-listing-ul">
+        </ul>
+    </section>
+    
+    <script type="module" src="/scripts/add_listing.js"></script>
+</body>
+</html>

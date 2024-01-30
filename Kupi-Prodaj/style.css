@@ -1,0 +1,1112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    padding-bottom: 22px;
+}
+button:hover{
+    cursor: pointer;
+}
+/* --------------------------- LOG IN ------------------------------------------------------------------------------------------------------------------------------- */
+#log-in-container{
+    background: url(/images/bridge\ opacity0.45.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 97.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#log-in-container #text-div{
+    margin-bottom: 35px;
+    text-align: center;
+}
+#log-in-container #text-div h1{
+    font-size: 70px;
+}
+#log-in-container #text-div h1 #title-span{
+    color: #437fc7;
+    text-shadow: 1px 1px#050505;
+}
+#log-in-container #text-div h2{
+    font-size: 30px;
+    color: rgb(90, 90, 90);
+    text-shadow: 1px 1px black;
+}
+#log-in-container #log-in-form{
+    width: 30%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset;
+    background-color: rgb(235, 235, 235);
+    border-radius: 15px;
+}
+#log-in-container input{ 
+    font-size: 16px;
+    padding: 5px;
+    margin-top: 12px;
+    width: 65%;
+    border: none;
+    border-bottom: 1px solid rgb(180, 180, 180);
+    outline: none;
+    background-color:rgb(235, 235, 235);
+}
+#log-in-container #login-btn{
+    padding: 5px;
+    margin: 10px 0;
+    border:none;
+    border-radius: 5px;
+    background-color: #6daffe;
+    color: white;
+    width: 65%;
+    font-size: 16px;
+}
+#log-in-container #login-btn:hover{
+    background-color: #62a8fd;
+}
+#log-in-container img{
+    margin: 20px 0;
+}
+#log-in-container #log-in-form #guest-btn{
+    padding: 5px;
+    margin:3px 0 15px 0;
+    border:1px solid rgb(207, 207, 207);
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    width: 65%;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#log-in-container #log-in-form #guest-btn img{
+    margin: 0 20px 0 0;
+}
+#log-in-container #name{
+    display: flex;
+}
+.blue-link{
+    text-decoration: none;
+    color:#437fc7;
+}
+.blue-link:hover{
+    color: #223c5c;
+}
+#google-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+    margin-bottom: 3px;
+    border:1px solid rgb(207, 207, 207);
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    width: 65%;
+    font-size: 16px;
+}
+#google-btn img{
+    margin: 0 20px 0 0;
+}
+#checkDiv{
+    display: flex;
+    width: 65%;
+    align-items: baseline;
+    justify-content: center;
+    padding: 0;
+}
+#checkDiv div{
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    margin-top: 10px;
+}
+#checkDiv div input{
+    margin: 0;
+    border-radius: 10px;
+}
+/* ------------------------------------------------REGISTER ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+#log-in-container #register-form{
+    width: 35%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset;
+    background-color: rgb(235, 235, 235);
+    border-radius: 15px;
+}
+#register-form input{
+    margin-top: 20px;
+}
+#register-form #register-btn{
+    padding: 5px;
+    margin: 20px 0 3px 0;
+    border:none;
+    border-radius: 5px;
+    background-color: #6daffe;
+    color: white;
+    width: 65%;
+    font-size: 16px;
+}
+#register-form #register-btn:hover{
+    background-color: #62a8fd;
+}
+#register-form #google-btn{
+    margin: 3px 0 10px 0;
+}
+#register-form div{
+    width: 65%;
+}
+#register-form div input{
+    width: 20px;
+}
+.error-message{
+    border-top: 1px solid red;
+    color: red;
+    font-size: 14px;
+    font-weight: 400;
+    width: 65%;
+    display: none;
+}
+/* ------------MEDIA QUERYS----->-----REGISTER / LOG IN ------------------------------------------------------- */
+@media only screen and (max-width: 1450px) {
+    #log-in-container #log-in-form{
+        width: 40%;
+    }
+    #log-in-container #register-form{
+        width: 50%;
+    }
+    #log-in-container {
+        height: 1000px;
+        min-height: 100%;
+    }
+}
+@media only screen and (max-width: 950px) {
+    #log-in-container #log-in-form{
+        width: 50%;
+    }
+    #log-in-container #register-form{
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 620px) {
+    #log-in-container #log-in-form{
+        width: 70%;
+    }
+    #log-in-container #register-form{
+        width: 80%;
+        margin-bottom: 15px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    #checkDiv{
+        flex-direction: column;
+    }
+    #log-in-container #log-in-form{
+        width: 70%;
+    }
+    #log-in-container #text-div h1{ 
+        font-size: 65px; 
+    }
+    #log-in-container #text-div h2{ 
+        font-size: 25px; 
+    }
+    #log-in-container #register-fosignrm{
+        width: 80%;
+        margin-bottom: 15px;
+    }
+}
+@media only screen and (max-width: 460px) {
+    #log-in-container{
+        justify-content:start;
+        padding: 20px 0 0 0;
+        height: 1000px;
+        min-height: 100%;
+    }
+    #log-in-container #log-in-form{
+        width: 90%;
+        padding: 20px 0;
+    }
+    #log-in-container #text-div h1{ 
+        font-size: 60px; 
+    }
+    #log-in-container #register-form{
+        width: 90%;
+        margin-bottom: 55px;
+        padding: 20px 0;
+    }
+}
+/* ---------------------------------------------- NAV-BAR ------------------------------------------------------------------------------------------------------------------------------- */
+nav{
+    display: flex;
+    background-color: #edf6ff;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    z-index: 3;
+}
+#nav-1{
+    top: 0;
+    height: 40px;
+}
+#nav-2{
+    top: 40px;
+    height: 33px;
+}
+#search-bar{
+    top: 73px;
+    height: 40px;
+}
+nav .nav-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav .nav-item img{
+    width: 35px;
+}
+nav .nav-item #sign-out-btn{
+    color: #edf6ff;
+    background-color: #437fc7;
+    padding: 5px;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+nav .nav-item #sign-out-btn:hover{
+    background-color: #3075c9;
+}
+#loginLinkBtn{
+    background-color: #437fc7;
+    color: #edf6ff;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+#loginLinkBtn:hover{
+    background-color: #3075c9;
+}
+/* ------------------------------------- NAV 2 - LINKS ---------------------------------------------------------------------------------------- */
+#nav-2{
+    background-color: #6daffe;
+    border: 1px solid #edf6ff;
+    padding: 0 0 0 55px;
+}
+#nav-2 ul{
+    display: flex;
+}
+#nav-2 ul a{
+    margin: 0;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+#nav-2 ul a:hover{
+    background-color: #437fc7;
+}
+#nav-2 ul a li{
+    list-style-type: none;
+    color: #edf6ff;
+}
+.selected{
+    background-color: #437fc7;
+}
+/* ------------------------------------ NAV3 - SERACH BAR --------------------------------------------------------- */
+#search-bar{
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+#search-bar #search-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#search-bar #search-form select{
+    width: 35%;
+    margin: 0 0 0 5px;
+    padding: 4px;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 5px;
+    outline: none;
+}
+#search-bar #search-form input{
+    padding: 5px;
+    width: 35%;
+    border-radius: 5px;
+    margin: 0;
+    border: 1px solid rgb(207, 207, 207);
+    outline: none;
+}
+#search-bar #search-form div{
+    width: 45%;
+    margin: 0;
+}
+#search-bar #search-form button{
+    width: 15%;
+    color: #edf6ff;
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+    background-color: #5ea6ff;
+    margin: 0 0 0 10px;
+}
+#search-bar #search-form button:hover{
+    background-color: #4d9bfc;
+}
+/* ----MEDIA QUERYS -------- NAVS----------------------------------------------------------------- */
+@media only screen and (max-width: 800px) {
+    #search-bar #search-form select{
+        margin: 0 0 0 5px;
+    } 
+    #nav-2{
+        padding: 0;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 700px) {
+    #search-bar{
+        height: 70px;
+    }
+    #search-bar #search-form{
+        flex-direction: column;
+    }
+    #search-bar #search-form div{
+        display: flex;
+        flex-direction: row;
+        margin-top: 3px;
+        width: 95%;
+    }
+    #search-bar #search-form input{
+        width: 95%; 
+    }
+    #search-bar #search-form select{
+        width: 42%; 
+        margin: 0 5px 0 0;
+    }
+    #search-bar #search-form button{
+        width: 20%; 
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 500px) {
+    #logged-check{
+        display: none;
+    }
+}
+@media only screen and (max-width: 350px) {
+    #nav-2 ul a{    
+        padding: 5px 10px;
+    }
+    #nav-2 ul a li{
+        font-size: 15px;
+    }
+}
+/* ---------------------------------------------- ADD LISTING PAGE ------------------------------------------------------------------------------------------------------------------------------- */
+#add-listing-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#ffffff, #bedbff);
+    height: 89.5vh;
+}
+#add-listing-container #add-listing-form{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 1% 2% 1%;
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin: 50px 0;
+}
+#add-listing-container #add-listing-form h2{
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+#add-listing-container #add-listing-form .label-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px 15px;
+}
+#add-listing-container #add-listing-form .label-input label{
+    font-size: 17px;
+    text-align:start;
+    width: 100%;
+    font-weight: 500;
+}
+#add-listing-container #add-listing-form .label-input input, 
+#add-listing-container #add-listing-form .label-input select,
+#add-listing-container #add-listing-form .label-input textarea{
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 5px;
+    border: 1px solid rgb(212, 212, 212);
+}
+#add-listing-container #add-listing-form #location-category{
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;   
+    margin-right: 13px;
+}
+ #add-listing-container #add-listing-form #tpm-descriprion {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+ }
+ #add-listing-container #add-listing-form #tpm-descriprion #title-price-mobile {
+    width: 100%;
+ }
+ #add-listing-container #add-listing-form #tpm-descriprion #title-price-mobile #price-div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    justify-content: center;
+ }
+ #add-listing-container #add-listing-form #tpm-descriprion #title-price-mobile #price-radios{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    font-weight: 500;
+ }
+ #add-listing-container #add-listing-form #tpm-descriprion #title-price-mobile #price-radios input{
+    margin: 0 1px 0 10px;
+ }
+ #add-listing-container #add-listing-form #main-other{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 13px;
+ }
+ #add-listing-container #add-listing-form #main-other label{
+    padding-left: 7px;
+ }
+ #add-listing-container #add-listing-form #main-other input{
+    border: 1px dashed rgb(182, 182, 182);
+ }
+#buttons-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 13px;
+}
+#add-listing-btn{
+    padding: 7px;
+    font-size: 17px;
+    color: #edf6ff;
+    background-color: #437fc7;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    margin: 10px 0 5px 0;
+}
+#add-listing-btn:hover{
+    background-color: #3577c9;
+}
+#reset-listing-btn{
+    padding: 4px;
+    font-size: 14px;
+    color: #edf6ff;
+    background-color: #414953;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    margin: 2px 5px;
+}
+#reset-listing-btn:hover{
+    background-color: #383f47;
+}
+#cancelUpdateBtn{
+    padding: 5px;
+    color: #edf6ff;
+    background-color: #414953;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    margin-bottom: 5px;
+}
+#cancelUpdateBtn:hover{
+    background-color: #383f47;
+}
+#removeMainBtn, #removeOtherBtn{
+    padding: 4px;
+    width: 150px;
+    align-self: baseline;
+    margin-top: 5px;
+    background-color: rgb(194, 73, 73);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(194, 73, 73);
+}
+#removeMainBtn:hover, #removeOtherBtn:hover{
+    background-color: rgb(180, 70, 70);
+}
+/* ----MEDIA QUERYS - ADD LISTINGS----------------------------------------------------------------- */
+@media only screen and (max-height: 840px) {
+    #add-listing-container {
+        height: auto;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #add-listing-container{
+        height: auto;
+    }
+    #add-listing-container #add-listing-form{
+        width: 700px;
+        margin: 0 25px;
+    }
+    #add-listing-container #add-listing-form #location-category{
+        flex-direction: column;
+    }
+     #add-listing-container #add-listing-form #tpm-descriprion {
+        flex-direction: column;    
+     }
+     #add-listing-container #add-listing-form #tpm-descriprion #title-price-mobile #price-div{
+        justify-content: flex-start;
+     }
+     #add-listing-container #add-listing-form #main-other{
+        width: 100%;
+        flex-direction: column;
+     }
+}
+@media only screen and (max-width: 450px) {
+    #add-listing-container #add-listing-form{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+}
+/* --------------------------------------Listings-------------------------------------------------------*/
+#listings, #myListings{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+#listings ul, #myListings ul{
+    margin: 5px 0;
+    background-color: white;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#listings ul .new-listing #title-date, #myListings ul .new-listing #title-date{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#listings ul .new-listing, #myListings ul .new-listing{
+    width: 100%;
+    list-style: none;
+    padding: 5px 15px 5px 15px;
+    border-bottom: 1px solid #d8d8d8;
+    display: flex;
+    overflow: hidden;
+    height: 170px;
+}
+#listings ul .new-listing{
+    height: 170px;
+}
+#listings ul .new-listing #image, #myListings ul .new-listing #image{
+    width: 150px;
+    border: 1px solid #d8d8d8;
+    border-radius: 7px;
+    background: url('/images/noImage150px.png');
+}
+.new-listing #text #title-date h1{ /*title*/
+    color: #345988;
+    height: 32px;
+    overflow: hidden;
+    white-space:nowrap;
+    font-weight: 600;
+}
+.new-listing #text #title-date h1:hover{
+    cursor: pointer;
+}
+.new-listing h5{ /*date*/
+    text-align: center;
+    font-weight: 600;
+}
+.new-listing #text{
+    width: 88%;
+    overflow: hidden;
+}
+.new-listing h4{
+    font-weight: 700;
+}
+/* -----MEDIA QUERIES - Listings-------------------------------------------------------*/
+@media only screen and (max-width: 1250px) {
+    #listings ul, #myListings ul{
+        width: 95%; 
+    }
+}
+@media only screen and (max-width: 1060px) {
+    #listings ul, #myListings ul{
+        width: 98%; 
+    }
+    #listings ul .new-listing, #myListings ul .new-listing{
+        padding: 5px 8px 5px 8px;
+    }
+}
+@media only screen and (max-width: 975px) {
+    #listings ul .new-listing #title-date, #myListings ul .new-listing #title-date{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items:baseline;
+    }
+    .new-listing #text{
+        width: 70%;
+        overflow: hidden;
+    }
+    .new-listing #text h4{
+        color: #33619b;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .new-listing #text #title-date h1{
+        font-size: 20px;
+        overflow: wrap;
+    }
+    .new-listing #text{
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .new-listing #text{
+        width: 77%;
+    }
+    .new-listing #image{
+        width: 125px;
+        height: 125px; 
+    } 
+    #listings ul .new-listing #image, #myListings ul .new-listing #image{
+        background: url('/images/noImage125px.jpg');
+    }
+    #image #main-img{
+        width: 125px;
+        height: 125px;
+    }
+    #listings ul .new-listing, #myListings ul .new-listing{
+        height: 145px;
+    }
+    .new-listing #text p{
+        font-size: 14px;
+    }
+    .new-listing #text h4{
+        color: #33619b;
+    }
+}
+/* ------------------------------- LISTINGS ENLARGED --------------------------------------------- */
+.new-listing-enlarge{
+    list-style: none;
+    border-bottom: 1px solid rgb(180, 178, 178);
+    display: flex;
+    flex-direction: row;
+    align-items:top;
+    overflow: hidden;
+    padding-bottom: 0;
+    margin-top: 0;
+}
+.new-listing-enlarge #image #main-img{ 
+    height: 500px;
+    width: 500px;
+    margin-left: 10px;
+    background: url('/images/noImage500px.jpg');
+    border-radius: 5px;
+    border: 1px solid #d8d8d8;
+}
+.new-listing-enlarge #image{
+    background-color: white;
+    width: 520px;
+    border-radius: 5px;
+    height: 630px;
+    margin: 25px 0 0 40px;
+}
+#myListings ul .new-listing-enlarge #image{
+    height: 713px;
+}
+.new-listing-enlarge #text{
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    margin: 0 0 15px 0;
+    height: 100%;
+}
+.new-listing-enlarge #text #title-date h1{
+    color: #345988;
+    font-size: 45px;
+    margin-bottom: 8px;
+    word-wrap: break-word;
+}
+.new-listing-enlarge #text #title-date{
+    margin-bottom: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.new-listing-enlarge #closeBtn{
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: white;
+    background-color: white;
+    position: relative;
+    bottom: 0;
+    left: 45vw;
+    border: none;
+    z-index: 1;
+}
+.new-listing-enlarge #closeBtn:hover{
+    background-color: white;
+}
+/* description */
+.new-listing-enlarge p{  
+    margin: 15px 0;
+    font-size: 21px;
+}
+/* category, location */
+.new-listing-enlarge h6{
+    font-size: 16px;
+}
+/* date */
+.new-listing-enlarge h5{
+    font-size: 17px;
+}
+/* price */
+.new-listing-enlarge h4{
+    font-size: 20px;
+    color:#2b4d75;
+}
+#other-images{
+    display: flex;
+    padding: 25px 0 0 25px;
+    
+    display: none;
+}
+#other-images img{
+    margin: 0 3px;
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    background-color: white;
+    width: 90px;
+    height: 90px;
+    background: url('/images/noImage90.jpg');
+}
+#other-images img:hover{
+    cursor:pointer;
+}
+#image{
+    background-color: grey;
+    margin: 5px 15px 5px 0;
+    overflow: hidden;
+    height: 150px;
+    width: 150px;
+}
+.new-listing-enlarge #text{
+    width: 59.4%;
+    padding-left: 5px;
+}
+#my-listing-ul p{
+    margin-bottom: 6px;
+}
+#my-listing-ul #delete-listing-btn{
+    padding: 4px;
+    color: whitesmoke;
+    border-radius: 5px;
+    background-color: brown;
+    background-color: rgb(194, 73, 73);
+    border: 1px solid rgb(194, 73, 73);
+    width: 40%;
+}
+#my-listing-ul #delete-listing-btn:hover{
+    background-color: rgb(180, 70, 70);
+}
+#my-listing-ul #edit-listing-btn{
+    padding: 5px;
+    border-radius: 5px;
+    color: whitesmoke;
+    background-color: rgb(214, 175, 3);
+    background-color: #437fc7;
+    border: 1px solid #437fc7;
+    margin-top: 5px;
+    width: 40%;
+}
+#my-listing-ul #edit-listing-btn:hover{
+    background-color: #3577c9;  
+}
+#button-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.new-listing #add-listing-container{
+    height: 80vh;
+}
+#full-size-btn{
+    color: black;
+    background-color: white;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 27px;
+    font-weight: bolder;
+}
+#city-category{
+    display: flex;
+}
+#city-category h6{
+    padding: 0 1px;
+    color: rgb(95, 95, 95);
+}
+#phoneNumberDiv{
+    margin-top: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 1px dashed #adadad;
+    border-radius: 5px;
+    padding: 5px 5px 5px 15px;
+    width: 360px;
+}
+#userEmailDiv{
+    margin-top: 5px;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    border: 1px dashed #adadad;
+    border-radius: 5px;
+    padding: 1.2px 1.2px 1.2px 15px;
+    width: 360px;
+}
+#userEmailDiv img{
+    margin: 0 15px;
+}
+#phoneNumberDiv img{
+    margin: 0 19px;
+}
+/* -----MEDIA QUERIES - ENLARGED Listings-------------------------------------------------------*/
+@media only screen and (max-width: 1700px) {
+    .new-listing-enlarge #closeBtn{
+        left: 43vw;
+    }
+}
+@media only screen and (max-width: 1600px) {
+    .new-listing-enlarge #closeBtn{
+        left: 40.4vw;
+    }
+}
+@media only screen and (max-width: 1480px) {
+    .new-listing-enlarge #closeBtn{
+        left: 36vw;
+    }
+}
+ @media only screen and (max-width: 1350px) {
+    .new-listing-enlarge #closeBtn{
+        left: 33vw;
+    }
+}
+ @media only screen and (max-width: 1250px) {
+    .new-listing-enlarge #closeBtn{
+        left: 42vw;
+    }
+}
+@media only screen and (max-width: 1140px) {
+    .new-listing-enlarge #closeBtn{
+        left: 40.4vw;
+    }
+} 
+@media only screen and (max-width: 1090px) {
+    .new-listing-enlarge #closeBtn{
+        left: 39vw;
+    }
+} 
+@media only screen and (max-width: 1000px) {
+    .new-listing-enlarge #closeBtn{
+        left: 40vw;
+    }
+    .new-listing-enlarge{
+        flex-direction: column-reverse;
+        align-items:center;
+        overflow: hidden;
+        padding-bottom: 0;
+        margin-top: 0;
+    }
+    .new-listing-enlarge #text{
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        overflow: hidden;
+    }
+    .new-listing-enlarge #text h5{
+        text-align: center;
+    }
+    .new-listing-enlarge #text p{
+        text-align: center;
+    }
+    .new-listing-enlarge #image #other-images{
+        padding-bottom: 10px;
+    }
+} 
+@media only screen and (max-width: 1000px){
+    #userEmailDiv{
+        padding: 0;
+        width: 300px;
+        justify-content: center;
+    }
+    #userEmailDiv img{
+        margin: 0;
+    }
+    #phoneNumberDiv{
+        width: 300px;
+        padding: 4px 4px 4px 0;
+    }
+    #phoneNumberDiv img{
+        margin-right: 3px;
+    }
+    .new-listing-enlarge #text h1{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 600px){
+    .new-listing-enlarge #image{
+        margin: 1px;
+    }
+    .new-listing-enlarge #image #main-img{
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 530px){
+    .new-listing-enlarge #closeBtn{
+        left: 39vw;
+    }
+    .new-listing-enlarge #image{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    .new-listing-enlarge #image #main-img{
+        width: 95%;
+        height: 400px;
+        width: 400px;
+        background: url('/images/noImage400px.jpg');
+    }
+    .new-listing-enlarge #image #other-images{
+        padding: 10px 0;
+    }
+    #listings .new-listing-enlarge #image{
+        height: 530px;
+    }
+    #myListings ul .new-listing-enlarge #image{
+        height: 600px;
+    }
+}
+@media only screen and (max-width: 500px){
+    #other-images img{
+        margin: 0 1px;
+        border: 1px solid rgb(136, 136, 136);
+        border-radius: 5px;
+        background-color: white;
+        width: 80px;
+        height: 80px;
+        background: url('/images/noImage80px.jpg');
+    }
+}
+@media only screen and (max-width: 425px){
+    .new-listing-enlarge #closeBtn{
+        left: 37.5vw;
+    }
+    .new-listing-enlarge{
+        justify-content: start;
+    }
+    .new-listing-enlarge #image{
+        width: 98%;
+    } 
+    #listings .new-listing-enlarge #image{
+        height: 465px;
+    }
+    #myListings ul .new-listing-enlarge #image{
+        height: 550px;
+    }
+    .new-listing-enlarge #image #main-img{
+        width: 98%;
+        height: 350px;
+        width: 350px;
+        background: url('/images/noImage350.jpg');
+    }
+    .new-listing-enlarge #other-images img{
+        margin: 0 0.5px;
+        border: 1px solid rgb(136, 136, 136);
+        border-radius: 5px;
+        background-color: white;
+        width: 70px;
+        height: 70px;
+        background: url('/images/noImage70px.jpg');
+    }
+    .new-listing-enlarge #text{
+        height: 60%;
+        align-items: center;
+        justify-content:start;
+        margin-top: 10px;
+    } 
+}
+/*  ----------------------  FOOTER   ---------------------------*/
+#footer{
+    height: 25px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#footer h5{
+    width: 100%;
+    text-align: center;
+}
+#fullpage {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-color: black;
+  }

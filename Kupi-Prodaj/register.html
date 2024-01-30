@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>KupiProdaj | Register</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div style="display: none;" id="logged-check"></div>
+        <div id="log-in-container">
+
+            <div id="text-div" >
+                <h1>Welcome to <span id="title-span">KupiProdaj</span> </h1>
+                <h2>The Best Listing Website in Macedonia</h2>
+            </div>
+
+            <form id="register-form">
+                <h2>Create an Account</h2>
+                <img src="/images/user.png" alt="" width="70px">
+                <input placeholder="First Name:" id="f-name" type="text" name="f-name" required>          
+                <h5 class="error-message" id="error-f-name">Please enter valid First Name</h5>
+                <input placeholder="Last Name:" id="l-name" type="text" name="l-name" required>           
+                <h5 class="error-message" id="error-l-name">Please enter valid Last Name</h5>
+                <input placeholder="E-mail:" id="e-mail-reg" name="e-mail-reg" type="email" required>               
+                <h5 class="error-message" id="error-e-mail-reg">Please provide a valid email</h5>
+                <input placeholder="Password:" id="password-reg" name="password-reg" type="password" required>
+                <h5 class="error-message" id="error-password-reg">Please enter valid Password</h5>
+                <input placeholder="Repeat Password: " id="r-password-reg" name="r-password" type="password" required>
+                <h5 class="error-message" id="error-r-password-reg">Please enter valid Password</h5>
+                <div>
+                    <input id="pass-checkbox" style="width: 20px;" type="checkbox"> <span style="font-size: 14px;">Show Password</span> 
+                </div>
+                <div>
+                    <input width="100%" type="checkbox" id="agree-terms" required><span style="font-size: 14px;">I Agree with Terms of Service</span>
+                </div>
+                
+                <button type="button" id="register-btn" >Create an Account</button>
+                <h4>or</h4>
+                <button id="google-btn"> <img src="/images/google.png" alt="Google-icon" width="20px" height="20px"> Sign in with Google</button>
+                
+                <p>Already have an account? <a class="blue-link" href="login.html">Log in!</a></p>
+            </form>
+        </div>
+
+        <nav id="footer">
+            <h5>Copyright &copy; 2022, Andrej Vlahovski</h5>
+        </nav>
+        
+        <script type="module" src="/scripts/registrer.js"></script>
+    </body>
+</html>
